@@ -154,7 +154,7 @@ p,
 }
 
 .grid-container {
-    min-width: 400px;
+    
     display: grid;
     grid-template-columns: auto auto auto;
     gap:15px;
@@ -162,10 +162,12 @@ p,
 
 .single-product {
     width:98%;
-    background: linear-gradient(to bottom, #c8d7fa, rgb(210, 239, 247));
+    background: linear-gradient(to bottom, #dee6fa, rgb(226, 245, 250));
     padding:5px;
     border-radius:7px;
     box-shadow: 3px 3px 10px  skyblue;
+    margin-bottom:30px;
+    
 }
 .single-product img{
     width:95%;
@@ -187,4 +189,29 @@ p,
     font-size:20px;
     border-radius:50%;
     padding:9px;
+}
+
+
+/* gallery styles */
+.gallery-section{
+    max-width:1250px;
+    margin:0 auto;
+    margin-top:60px;
+}
+.gallery-container{
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.single-gallery img{
+    width:100%;
+    border-radius:5px;
+    object-fit: cover;
+    height:100%;
+}
+.single-gallery{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    flex-basis:400px;
+    border-radius:5px;
 }
