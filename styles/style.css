@@ -1,113 +1,190 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
 /* Navbar Styles */
-header{
-    background-color:rgb(253, 244, 232);
-    width:100%;
+header {
+    background-color: rgb(253, 244, 232);
+    width: 100%;
 }
-.header-section{
-    max-width:1250px;
-    margin:0 auto;
-    display:flex;
+
+.header-section {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
 }
-.nav-container{
-    min-height:20px;
-    display:flex;
+
+.nav-container {
+    min-height: 20px;
+    display: flex;
     /* justify-content:center; */
-    align-items:center;
-    width:50%;
-    
-}
-.nav-container img{
-    width:90px;
-}
-.special1{
-    color:rgb(49, 110, 251);
-
-}
-.special2{
-    color:rgb(49, 207, 251);
-    font-weight:900;
-}
-
-.items-container{
+    align-items: center;
     width: 50%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+
 }
-.items-container a{
-    text-decoration:none;
-    font-size:20px;
-    color:rgb(8, 160, 255);
-    font-weight:900;
+
+.nav-container img {
+    width: 90px;
 }
-.login-btn a{
+
+.special1 {
+    color: rgb(49, 110, 251);
+
+}
+
+.special2 {
+    color: rgb(49, 207, 251);
+    font-weight: 900;
+}
+
+.items-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-container a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(8, 160, 255);
+    font-weight: 900;
+}
+
+.login-btn a {
     background-color: rgb(49, 207, 251);
-    padding:10px 20px;
-    border-radius:5px;
-    color:rgb(253, 244, 232);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(253, 244, 232);
 }
 
 
 /* banner section styles */
-.banner-section{
-    max-width:1250px;
-    margin:0 auto;
-    display:flex;
-    background-color:rgb(255, 240, 240);
+.banner-section {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(255, 240, 240);
 }
-.text-container{
-    width:50%;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    gap:9px;
-    margin-top:0;
-    padding-top:0;
+
+.text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 0;
+    padding-top: 0;
 }
-.banner-image-container{
-    width:50%;
+
+.banner-image-container {
+    width: 50%;
+    position: relative;
 }
-.banner-image-container img{
-    width:100%;
+
+.banner-image-container img {
+    width: 100%;
     object-fit: cover;
-    display:block;
-    height:100%;
-    border-radius:5px;
+    display: block;
+    height: 100%;
+    border-radius: 5px;
 }
-.text-container h1,p,span{
-    font-size:45px;
+
+.text-container h1,
+p,
+.s {
+    font-size: 45px;
 }
-.banner-heading{
-    background:linear-gradient(to bottom, #316efb,rgb(49, 207, 251));
+
+.banner-heading {
+    background: linear-gradient(to bottom, #316efb, rgb(49, 207, 251));
     background-clip: text;
-    color:transparent;
-    font-size:60px;
-    margin-bottom:0;
+    color: transparent;
+    font-size: 60px;
+    margin-bottom: 0;
 }
-#collections{
+
+#collections {
     font-family: "Qwitcher Grypen", system-ui;
-    font-size:50px;
-    font-weight:900;
-    margin:0 auto;
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 auto;
 }
-.fa-brand{
-    font-size:xx-large
+
+.fa-brand {
+    font-size: xx-large
 }
-.icons{
-    display:flex;
+
+.icons {
+    display: flex;
     gap: 15px;
 }
-.common-button{
-    padding:10px 20px;
-    color:white;
-    border:none;
+
+.common-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
     border-radius: 5px;
-    background:linear-gradient(to top,rgb(49, 207, 251),#316efb )  ;
+    background: linear-gradient(to top, rgb(49, 207, 251), #316efb);
+}
+
+.discount {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(123, 95, 1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 9%;
+    right: 9%;
+}
+
+
+/* products style */
+.product-section {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:15px;
+}
+
+.single-product {
+    width:98%;
+    background: linear-gradient(to bottom, #c8d7fa, rgb(210, 239, 247));
+    padding:5px;
+    border-radius:7px;
+    box-shadow: 3px 3px 10px  skyblue;
+}
+.single-product img{
+    width:95%;
+    display: block;
+    margin: 0 auto;
+    margin-top:3%;
+    border-radius:7px;
+    box-shadow: 3px 3px 10px  skyblue;
+    height:74%;
+    object-fit: cover;
+}
+.heading-icons{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.span-icon{
+    background-color:pink;
+    font-size:20px;
+    border-radius:50%;
+    padding:9px;
 }
